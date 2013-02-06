@@ -4,12 +4,12 @@
     </names>
     <informations></informations>
     <description>
-        <text x="-32.4453" y="-40.6667" size="7" text="14"/>
-        <text x="26.1953" y="-40.6667" size="7" text="8"/>
-        <text x="26.8594" y="41.3333" size="7" text="7"/>
-        <text x="-33.1406" y="41.3333" size="7" text="1"/>
-        <text x="-56.9219" y="-52" size="9" text="ACT04"/>
-        <rect width="76" x="-8" y="-98" antialias="false" height="51" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text x="-34.7812" y="-34.6667" size="7" text="14"/>
+        <text x="26.8594" y="-34.6667" size="7" text="8"/>
+        <text x="27.8594" y="40.3333" size="7" text="7"/>
+        <text x="-33.1406" y="40.3333" size="7" text="1"/>
+        <text x="-22.9219" y="3" size="9" text="ACT04"/>
+        <rect width="76" x="-38" y="-26" antialias="false" height="51" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
         <terminal x="-30" y="-30" orientation="n"/>
         <terminal x="-20" y="-30" orientation="n"/>
         <terminal x="-10" y="-30" orientation="n"/>
