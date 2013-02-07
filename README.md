@@ -1,4 +1,4 @@
-Linux support for readout of linear photocell arrays
+How to read out linear photocell arrays
 ===================
 
 This project aims for supporting readout of CCD modules.
