@@ -1,4 +1,7 @@
 
+//
+// Pins where the CCD is connected to the Arduino
+//
 CLK = 
 SW = 
 CL =
@@ -12,4 +15,10 @@ OS1 =
 OS2 =
 OS3 =
 
-
+//
+// line clamp mode
+// TCD2905D datasheet page 8
+//
+void loop() {
+  ...
+}
