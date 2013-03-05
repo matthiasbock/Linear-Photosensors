@@ -44,13 +44,12 @@ int dummy2 = 14;
 int pixels = dummy1 + signal + dummy2;
 
 // timing in nanoseconds (ns)
-int RS_pulseWidth = 2; // typical: 100 ns
-int OS_settleTime = 1; // typical: 100 ns
-int CLK_pulseWidth = 20; // typical: 1000 ns
-int SH_pulseWidth = 20; // typical: 5000 ns
+int RS_pulseWidth = 3; // typical: 100 ns
+int OS_settleTime = 0; // typical: 100 ns
+int CLK_pulseWidth = 6; // typical: 1000 ns
+int SH_pulseWidth = 6; // typical: 5000 ns
 
-int CLK_RS_delay = CLK_pulseWidth-RS_pulseWidth-OS_settleTime-1;
-int settle_CLK_delay = 1;
+int half = (CLK_pulseWidth-RS_pulseWidth)/2;
 
 void loop() {
   ledLevel = ledLevel xor 1;
@@ -73,25 +72,27 @@ void loop() {
   
   int clock = HIGH;
   for (int P=0; P < pixels; P++) {
+    //
     // invert clock
     // with every clock inversion another value is kicked out of the CCD
+    //
     clock = clock xor 1;
     digitalWrite(CLK, clock);
 
-    delay(OS_settleTime);
+//    delay(OS_settleTime);
     // read analog data
     // analogRead(OS1);
     // analogRead(OS2);
     // analogRead(OS3);
 
-    delay(CLK_RS_delay);
+    delay(3);
     
+    //
     // reset pulse
     // depletes the current value's capacitor
+    //
     digitalWrite(RS, HIGH);
-    delay(RS_pulseWidth);
+    delay(3);
     digitalWrite(RS, LOW);
-        
-    delay(settle_CLK_delay);
     }
 }
