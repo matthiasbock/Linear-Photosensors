@@ -9,9 +9,9 @@ int CLK = base+1;
 int SW = base+3;
 int CP = base+4;
 int RS = base+5;
-int not_SH1 = base+6;
-int not_SH2 = base+2;
-int not_SH3 = base;
+int SH1 = base+6;
+int SH2 = base+2;
+int SH3 = base;
 
 int OS1 = A0;
 int OS2 = A1;
@@ -24,9 +24,9 @@ void setup() {
     pinMode(SW, OUTPUT);
     pinMode(CP, OUTPUT);
     pinMode(RS, OUTPUT);
-    pinMode(not_SH1, OUTPUT);
-    pinMode(not_SH2, OUTPUT);
-    pinMode(not_SH3, OUTPUT);
+    pinMode(SH1, OUTPUT);
+    pinMode(SH2, OUTPUT);
+    pinMode(SH3, OUTPUT);
 
     pinMode(OS1, INPUT);
     pinMode(OS2, INPUT);
@@ -55,9 +55,9 @@ void loop() {
   ledLevel = ledLevel xor 1;
   digitalWrite(ledPin, ledLevel);
 
-  digitalWrite(not_SH1, LOW);
-  digitalWrite(not_SH2, LOW);
-  digitalWrite(not_SH3, LOW);
+  digitalWrite(SH1, HIGH);
+  digitalWrite(SH2, HIGH);
+  digitalWrite(SH3, HIGH);
   digitalWrite(CLK, HIGH);
   digitalWrite(RS, LOW);
   digitalWrite(CP, HIGH);
@@ -65,9 +65,9 @@ void loop() {
 
   delay(SH_pulseWidth);
 
-  digitalWrite(not_SH1, HIGH);
-  digitalWrite(not_SH2, HIGH);
-  digitalWrite(not_SH3, HIGH);
+  digitalWrite(SH1, LOW);
+  digitalWrite(SH2, LOW);
+  digitalWrite(SH3, LOW);
   digitalWrite(CP, LOW);
   
   int clock = HIGH;
