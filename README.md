@@ -29,6 +29,17 @@ which is based on the Atmel ATmega2560.
 ## HP C5110-26501 REV:B
 ## API 610PLUS CCD.BD N3717 REV:S4
 
+# Sensor gallery
+<img width="300px" src="https://raw.githubusercontent.com/matthiasbock/Linear-Photosensors/master/fotos/Amersham%20Novaspec%20III/IMG_20171011_223641.jpg"/>
+<img width="300px" src="https://raw.githubusercontent.com/matthiasbock/Linear-Photosensors/master/fotos/API%20610PLUS%20CCD.BD%20N3717%20REV.S4%20cis-sensor.jpeg"/>
+<img width="300px" src="https://raw.githubusercontent.com/matthiasbock/Linear-Photosensors/master/fotos/DSC09437.JPG"/>
+<img width="300px" src="https://raw.githubusercontent.com/matthiasbock/Linear-Photosensors/master/fotos/DSC09439.JPG"/>
+<img width="300px" src="https://raw.githubusercontent.com/matthiasbock/Linear-Photosensors/master/fotos/DSC09441.JPG"/>
+<img width="300px" src="https://raw.githubusercontent.com/matthiasbock/Linear-Photosensors/master/fotos/DSC09444.JPG"/>
+<img width="300px" src="https://raw.githubusercontent.com/matthiasbock/Linear-Photosensors/master/fotos/IMG_20170128_132900.JPG"/>
+<img width="300px" src="https://raw.githubusercontent.com/matthiasbock/Linear-Photosensors/master/fotos/IMG_20170128_160226.jpg"/>
+<img width="300px" src="https://raw.githubusercontent.com/matthiasbock/Linear-Photosensors/master/fotos/IMG_3139.JPG"/>
+
 # Links
  * Arduino analog inputs tutorial: http://arduino.cc/en/Tutorial/AnalogInput
  * Nathan hooking up a sensor to an oscilloscope: http://www.youtube.com/watch?v=ut9LfQmaYkU
